@@ -1,0 +1,11 @@
+ragma solidity ^0.4.0; 
+
+contract Helloworldcontract {
+    string word = "Hello World";
+    
+ function getWord() constant returns(string){
+        return word;
+    }
+ function setWord (string NewWord) returns(string) {
+     word = NewWord;
+     return word;
